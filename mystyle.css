@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Muli", Sans-Serif;
+}
+
+nav {
+  background: #3d405b;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-nav {
+  border-top: 1px solid white;
+  background: #3d405b;
+  text-align: center;
+  display: none;
+}
+
+.mobile-nav li {
+  padding: 10px;
+}
+
+.mobile-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .fa-bars {
+  display: none;
+  align-self: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+h2 {
+  font-family: "Merriweather", Serif;
+}
+
+h3 {
+  text-align: center;
+  padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+nav h1 {
+  color: white;
+  font-family: "Merriweather", Serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  color: white;
+}
+
+header {
+  background: url(img/pizza-header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+
+header p {
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+
+header button {
+  border: 1px solud white;
+  padding: 0.5em;
+  background: transparent;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: #3d405b;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about {
+  background: #f6f6f6;
+  padding: 30px 0;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-container img {
+  width: 40%;
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.about-container p {
+  width: 60%;
+  padding: 20px;
+}
+
+.about h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.menu {
+  background: #ececec;
+  padding: 40px 0;
+}
+
+.menu h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.menu .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .row .menu-item {
+  width: 33.3%;
+  padding: 20px;
+}
+
+.menu .row .menu-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #3d405b;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.hours,
+.contact,
+.social-media {
+  width: 33.3%;
+  text-align: center;
+  color: white;
+}
+
+.fab {
+  padding: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* tablet */
+@media only screen and (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container p {
+    width: 100%;
+  }
+
+  .about-container img {
+    width: 100%;
+  }
+
+  .menu .row {
+    flex-direction: column;
+  }
+
+  .menu .row .menu-item {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .hours,
+  .contact,
+  .social-media {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* phone */
+@media only screen and (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
+
+  nav .fa-bars {
+    display: block;
+  }
+}

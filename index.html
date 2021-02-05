@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Plus</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ccf1326a8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".fa-bars").click(function () {
+          $(".mobile-nav").toggle("fast", function () {});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <h1>Pizza Plus</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fas fa-bars"></i>
+    </nav>
+    <ul class="mobile-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <header>
+      <div>
+        <h1>Pizza Plus</h1>
+        <p>The Best Pizza Experience</p>
+        <a href="#menu"><button>See Our Menu</button></a>
+      </div>
+    </header>
+    <main>
+      <div id="about" class="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <div class="about-container">
+            <img src="/img/about-us.jpg" alt="about us" />
+            <p>
+              Pizza Plus' culture can be defined in one word: Family. We are a
+              family-owned company, but more than that, our team has a “family”
+              way of connecting and caring for one another.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="menu">
+        <div class="container">
+          <h2>Menu</h2>
+          <div class="row">
+            <div class="menu-item">
+              <h3>Pizza</h3>
+              <img src="img/pizza.jpg" alt="pizza" />
+              <p>Small $6.99</p>
+              <p>Medium $9.99</p>
+              <p>Large $14.99</p>
+            </div>
+            <div class="menu-item">
+              <h3>Bread Sticks</h3>
+              <img src="img/bread-sticks.jpg" alt="bread sticks" />
+              <p>6 Piece $4.99</p>
+              <p>12 Piece $9.99</p>
+            </div>
+            <div class="menu-item">
+              <h3>Chicken Wings</h3>
+              <img src="img/chicken-wings.jpg" alt="chicken wings" />
+              <p>6 Piece $7.99</p>
+              <p>12 Piece $12.99</p>
+              <p>24 Piece 22.99</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="menu-item">
+              <h3>Salad</h3>
+              <img src="img/salad.jpg" alt="salad" />
+              <p>House Salad $4.99</p>
+              <p>Caesar Salad 4.99</p>
+              <p>Garden Salad $6.99</p>
+            </div>
+            <div class="menu-item">
+              <h3>Pasta</h3>
+              <img src="img/pasta.jpg" alt="pasta" />
+              <p>Chicken Alfredo $7.99</p>
+              <p>Spaghetti 7.99</p>
+              <p>Lasagna $8.99</p>
+            </div>
+            <div class="menu-item">
+              <h3>Brownies</h3>
+              <img src="img/brownies.jpg" alt="brownies" />
+              <p>Chocolate $3.99</p>
+              <p>Peanut Butter $3.99</p>
+              <p>Caramel $3.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="hours">
+        <p>Monday - Sunday 11am - 11pm</p>
+      </div>
+      <div class="contact">
+        <p>Contact Us</p>
+        <p>202-555-0195</p>
+      </div>
+      <div class="social-media">
+        <p>View Our Socials</p>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-youtube-square"></i>
+      </div>
+    </footer>
+  </body>
+</html>
