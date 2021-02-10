@@ -5,6 +5,14 @@
   font-family: "Muli", Sans-Serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   background: #3d405b;
   padding: 20px 40px;
