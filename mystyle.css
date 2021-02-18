@@ -191,6 +191,23 @@ footer {
   cursor: pointer;
 }
 
+.form {
+  text-align: center;
+  padding: 40px 0;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form input {
+  padding: 5px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
 /* tablet */
 @media only screen and (max-width: 700px) {
   .about-container {
