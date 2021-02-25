@@ -1,3 +1,10 @@
+//jQuery
+$(document).ready(function () {
+  $(".fa-bars").click(function () {
+    $(".mobile-nav").toggle("fast", function () {});
+  });
+});
+
 //listen for click event
 document.getElementById("submit").addEventListener("click", (e) => {
   let value = document.getElementById("email").value;
