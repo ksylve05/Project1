@@ -91,12 +91,14 @@ header h1 {
   font-size: 50px;
   font-family: "Pacifico", cursive;
   color: white;
+  font-weight: bold;
 }
 
 header p {
   font-size: 30px;
   font-family: "Pacifico", cursive;
   color: white;
+  font-weight: bold;
 }
 
 header button {
